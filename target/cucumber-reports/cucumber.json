@@ -1,0 +1,48 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-01T17:19:16.754Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.bdd.steps.EmployeeSteps.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Fetch the list of employees",
+        "description": "",
+        "id": "rate-service;fetch-the-list-of-employees",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.net.SocketTimeoutException: connect timed out\r\n\tat java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)\r\n\tat java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)\r\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\r\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\r\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\r\n\tat java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)\r\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\r\n\tat java.net.Socket.connect(Socket.java:607)\r\n\tat com.test.bdd.steps.EmployeeSteps.api_service_is_started(EmployeeSteps.java:30)\r\n\tat ✽.API Service is started(classpath:features/testemployee.feature:5)\r\n",
+              "duration": 1009000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "API Service is started",
+            "match": {
+              "location": "com.test.bdd.steps.EmployeeSteps.api_service_is_started()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Rate Service",
+    "description": "        Verify Rate Service Functionalities",
+    "id": "rate-service",
+    "keyword": "Feature",
+    "uri": "classpath:features/testemployee.feature",
+    "tags": []
+  }
+]
